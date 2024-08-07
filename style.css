@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #05004b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+form input, form button {
+    font-size: 24px;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+form input {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #000;
+}
+
+form button {
+    background-color: #009432;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007a2e;
+}
+
+.tasks {
+    background-color: #0863a0;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tasks li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks li.completed span {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.tasks button.completeTask {
+    background-color: #009432;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tasks button.completeTask:hover {
+    background-color: #007a2e;
+}
